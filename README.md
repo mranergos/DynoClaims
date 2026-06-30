@@ -21,6 +21,7 @@ A player runs a single command, gets a link to a claim page, and from there can 
 - Java 21
 
 ## Installation
+or if you want checkout the video https://youtu.be/_svDzJNKIbg
 
 1. Download the latest `DynoClaims.jar` from Releases (or build it yourself — see below) and drop it into your server's `plugins/` folder.
 2. Copy `claimmanager.html` and `claimmanager.js` from this repo's `web/` folder into `plugins/dynmap/web/` on your server.
