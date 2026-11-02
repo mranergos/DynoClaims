@@ -4,7 +4,7 @@ DynoClaims lets your Towny players claim land for their town straight from your 
 
 A player runs one command, gets a link, and from there can click, drag-paint, or draw-and-fill an outline to select chunks. The page checks which chunks are already owned before anything is claimed, so nothing happens by surprise.
 
-Video walkthrough: https://youtu.be/Ny6lPqYr4jk
+Video walkthrough: https://youtu.be/2-SuUIFFxZA
 
 ## Features
 
