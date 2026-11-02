@@ -1,5 +1,0 @@
-web:
-  port: 8124
-  token-ttl-seconds: 300
-  allowed-origin: "*"
-  public-base-url: "http://yourserver:8123"
