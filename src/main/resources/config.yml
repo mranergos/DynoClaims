@@ -1,0 +1,50 @@
+# DynoClaims configuration
+#
+# QUICK START: for most servers you don't need to change anything except making
+# sure the API port below is open in your firewall / host panel.
+# Run  /dynoclaimreload status  in the console to check your setup.
+
+web:
+  # Port the claim API listens on. Players' browsers must be able to reach it.
+  port: 12011
+  bind-address: "0.0.0.0"
+
+  # How long a link stays valid after the last time you used it.
+  token-ttl-seconds: 300
+
+  # Which map plugin the in-game link should open when both are installed:
+  # auto, dynmap or squaremap.
+  map-platform: auto
+
+  # ---- Everything below is OPTIONAL. Leave blank to auto-detect. ----
+
+  # Your server's public domain or IP (no http://). Blank = use the address
+  # each player joined the server with.
+  public-host: ""
+
+  # Full URL of your Dynmap/squaremap site, only if auto-detection is wrong or
+  # you're behind a reverse proxy / HTTPS. Example: "https://map.example.com"
+  web-base-url: ""
+
+  # Full URL of the claim API, only needed behind a reverse proxy / HTTPS.
+  # Blank = same host as the map page + the port above.
+  # Example: "https://map.example.com/dynoclaims"
+  public-base-url: ""
+
+  # Blank = the world the player is standing in (recommended).
+  world-name: ""
+  # Blank = worked out automatically from the world.
+  squaremap-world-id: ""
+
+  selection-color: "#000000"
+
+  # Restrict which websites may call the API. "*" = any (fine with the
+  # one-time player tokens), or e.g. "https://map.example.com".
+  allowed-origin: "*"
+
+claims:
+  # Max chunks per request (the web page splits bigger selections automatically).
+  max-chunks-per-request: 400
+  # Permission needed to claim from the web, so ordinary residents can't claim
+  # for their town. Leave blank to allow every resident of a town.
+  permission: "towny.command.town.claim"

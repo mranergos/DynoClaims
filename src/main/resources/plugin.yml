@@ -1,0 +1,26 @@
+name: DynoClaims
+version: '${version}'
+main: me.elonchunk.dynoClaims.DynoClaims
+api-version: '1.21'
+author: elonchunk
+description: Claim your town's chunks from the Dynmap/Squaremap web map instead of walking them.
+depend: [Towny]
+softdepend: [Dynmap, squaremap]
+
+commands:
+  webclaim:
+    description: Get a link to claim land from the web map.
+    usage: /webclaim
+    permission: dynoclaims.use
+  dynoclaimreload:
+    description: Reload config, redeploy web files, or check setup status.
+    usage: /dynoclaimreload [status]
+    permission: dynoclaims.admin
+
+permissions:
+  dynoclaims.use:
+    description: Use /webclaim to get a claim-map link.
+    default: true
+  dynoclaims.admin:
+    description: Reload DynoClaims and see its status.
+    default: op
